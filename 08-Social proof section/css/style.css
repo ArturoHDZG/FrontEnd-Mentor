@@ -1,0 +1,232 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    /* Neutral */
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    /* Fonts */
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Global Styles */
+h1, .Score_Info, .attribution {
+    color: var(--VeryDarkMagenta);
+}
+
+h1, .Text_Heading, .Score, .Score_Info, .attribution {
+    text-align: center;
+}
+
+h1, .Text_Heading {
+    padding: 0 2rem;
+}
+
+h1, .Score_Info, .Costumer_Name {
+    font-weight: 700;
+}
+
+.Container, .Grid, .Score {
+    display: flex;
+    flex-direction: column;
+}
+
+.Container, .Score {
+    justify-content: center;
+}
+
+.Container, .Score, .Costumer {
+    align-items: center;
+}
+
+.Costumer_Name, .Costumer_Review {
+    color: var(--White);
+}
+
+.Costumer_Verified {
+    color: var(--SoftPink);
+}
+
+.Score, .Text_Box {
+    border-radius: 1rem;
+}
+
+/* Main Layout */
+body {
+    background-color: var(--White);
+    background-image: url(../images/bg-pattern-top-mobile.svg),
+                      url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+}
+
+.Grid {
+    max-width: 37.5rem;
+}
+
+
+/* Top Content */
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.1rem;
+    line-height: 3rem;
+    margin: 6rem 0 2.5rem;
+}
+
+.Text_Heading {
+    color: var(--DarkGrayishMagenta);
+    font-weight: 500;
+    margin: 0 0 3rem;
+}
+
+/* Score Section */
+.Score {
+    background-color: var(--LightGrayishMagenta);
+    margin: 2rem 0;
+    min-height: 8rem;
+}
+
+.Stars {
+    margin: 0 0.1rem;
+}
+
+/* Reviews Section */
+.Grid_Box_3 {
+    margin-top: 1rem;
+}
+
+.Text_Box {
+    background-color: var(--VeryDarkMagenta);
+    max-height: 25rem;
+    padding: 3.5rem 3.5rem;
+    margin-top: 2rem;
+}
+
+.Costumer {
+    display: flex;
+    gap: 2rem;
+}
+
+.Costumer_Avatar {
+    border-radius: 50%;
+    max-width: 4rem;
+}
+
+.Costumer_Review {
+    padding-top: 3rem;
+}
+/* Footer */
+.attribution {
+    font-size: 1.1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 390px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg),
+                          url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: 51vw, 82vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 0;
+    }
+
+    .Grid {
+        max-height: 59rem;
+        max-width: 111rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "Box_1 Box_2"
+        "Box_3 Box_3";
+    }
+
+    /* Top Content */
+    .Grid_Box_1 {
+        grid-area: Box_1;
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-align: left;
+        letter-spacing: normal;
+        line-height: normal;
+        margin: 0;
+        padding: 0 15rem 0 0;
+    }
+
+    .Text_Heading {
+        text-align: left;
+        padding: 3rem 20rem 0 0;
+        margin: 0;
+    }
+
+    /* Score Section */
+    .Grid_Box_2 {
+        grid-area: Box_2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Score {
+        margin: 0 0 2rem;
+        padding-left: 3.5rem;
+        min-height: 5rem;
+        min-width: 45rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .Score_Info {
+        padding-left: 3.5rem;
+    }
+
+    .Score_1 {
+        align-self: flex-start;
+    }
+
+    .Score_2 {
+        align-self: center;
+    }
+    .Score_3 {
+        align-self: flex-end;
+    }
+
+    /* Reviews Section */
+    .Grid_Box_3 {
+        grid-area: Box_3;
+        display: flex;
+        gap: 3rem;
+        min-height: 27rem;
+        margin-top: 0;
+    }
+
+    .Text_Box {
+        margin-top: 0;
+    }
+
+    .Text_Box-1 {
+        align-self: flex-start;
+    }
+
+    .Text_Box-2 {
+        align-self: center;
+    }
+
+    .Text_Box-3 {
+        align-self: flex-end;
+    }
+}

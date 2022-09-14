@@ -1,0 +1,126 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --DarkCyan: hsl(185, 75%, 39%);
+    --UnsaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --DarkGray: hsl(0, 0%, 59%);
+    /* Fonts */
+    --Font: 'Kumbh Sans', sans-serif;
+}
+
+/* Global Styles */
+* {
+    font-family: var(--Font);
+}
+
+h1, h2 {
+    color: var(--UnsaturatedBlue);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    color: var(--DarkGrayishBlue);
+    font-size: 1.1rem;
+}
+
+span {
+    font-weight: 400;
+    color: var(--DarkGrayishBlue);
+    margin-left: 0.5rem;
+}
+
+hr {
+    border: 0.1rem solid var(--DarkGray);
+    min-width: 100%;
+    margin: 0;
+}
+
+/* Background */
+.Container {
+    background-color: var(--DarkCyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    /* Bubbles */
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 37vw bottom 50vh, left 35vw top 43vh;
+}
+
+/* Background Media Query */
+@media (min-width: 1024px) {
+    .Container {
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
+}
+
+
+/* Card Section */
+.Card {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 37.4rem;
+    width: 100%;
+    min-height: 33.5rem;
+    border-radius: 1.5rem;
+    position: relative;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.75);
+}
+
+.Card_BG {
+    min-width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    min-height: 14rem;
+    align-self: auto;
+}
+
+.Card_Avatar {
+    border-radius: 50%;
+    border: 0.6rem solid whitesmoke;
+    position: absolute;
+    top: 25%;
+}
+
+h1 {
+    margin: 7rem 0 0.5rem;
+}
+
+.Card > p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Card_Bottom {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 8.9rem;
+    min-width: 100%;
+}
+
+.Card_Bottom > div > p {
+    letter-spacing: 0.2rem;
+}
+
+/* Footer */
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,142 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VerylightGray: hsl(0, 0%, 95%);
+    /* Fonts */
+    --BigShoulders: 'Big Shoulders Display', cursive;
+    --Lexend: 'Lexend Deca', sans-serif;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--VerylightGray);
+}
+
+h2, button {
+    color: var(--VerylightGray);
+}
+
+h2 {
+    font-family: var(--BigShoulders);
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2.5rem 0 2.1rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--TransparentWhite);
+    font-family: var(--Lexend);
+    font-size: 1.5rem;
+}
+
+button {
+    cursor: pointer;
+    border-style: none;
+    font-family: var(--Lexend);
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    min-height: 5rem;
+    min-width: 15rem;
+    border-radius: 3rem;
+}
+
+/* Content Section */
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 2.5rem;
+}
+
+.Content {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+}
+
+.Card_1, .Card_2, .Card_3 {
+    flex-basis: 33.3%;
+    padding: 5rem 4.0rem;
+}
+
+/* Card 1 */
+.Card_1 {
+    background-color: var(--BrightOrange);
+}
+
+.Button_1 {
+    color: var(--BrightOrange);
+}
+
+.Button_1:active {
+    color: var(--VerylightGray);
+    background-color: var(--BrightOrange);
+    border: solid 0.2rem var(--VerylightGray);
+}
+
+/* Card 2 */
+.Card_2 {
+    background-color: var(--DarkCyan);
+}
+
+.Button_2 {
+    color: var(--DarkCyan);
+}
+
+.Button_2:active {
+    color: var(--VerylightGray);
+    background-color: var(--DarkCyan);
+    border: solid 0.2rem var(--VerylightGray);
+}
+
+/* Card 3 */
+.Card_3 {
+    background-color: var(--VeryDarkCyan);
+}
+
+.Button_3 {
+    color: var(--VeryDarkCyan);
+}
+
+.Button_3:active {
+    color: var(--VerylightGray);
+    background-color: var(--VeryDarkCyan);
+    border: solid 0.2rem var(--VerylightGray);
+}
+
+/* Footer */
+.attribution {
+    color: var(--VeryDarkCyan);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+    .Container {
+        padding: 0;
+    }
+
+    .Content {
+        flex-direction: row;
+        max-width: 89.9rem;
+        min-height: 50rem;
+    }
+
+    button {
+        margin-top: 8.5rem;
+    }
+}

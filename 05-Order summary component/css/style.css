@@ -1,0 +1,177 @@
+/* colors & Fonts */
+:root {
+    /* Primary */
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --UnsaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+    /* Fonts */
+    --Font: 'Red Hat Display', sans-serif;
+}
+
+/* Global Styles */
+* {
+    font-family: var(--Font);
+}
+
+h1 {
+    color: var(--DarkBlue);
+    margin-bottom: 2.5rem;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+h2 {
+    color: var(--DarkBlue);
+    font-weight: 900;
+}
+
+p {
+    color: var(--UnsaturatedBlue);
+    font-size: 1.6rem;
+}
+
+/* Background */
+.Container {
+    background-color: var(--PaleBlue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+/* Background Media Query */
+@media (min-width: 500px) {
+    .Container {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+/* Card Section */
+.Card {
+    background-color: var(--VeryPaleBlue);
+    box-shadow: 0 0 4.5rem -3rem rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 1.5rem;
+    max-width: 32.5rem;
+    min-height: 57rem;
+    overflow: hidden;
+}
+
+.Card > img {
+    min-height: 16rem;
+    margin-bottom: 3rem;
+}
+
+.Card > p {
+    padding: 0 2.5rem;
+}
+
+.Plan {
+    margin: 3rem 2.5rem 2.5rem;
+    background-color: hsl(220, 100%, 96%);
+    border-radius: 1rem;
+    min-height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.Plan > img {
+    margin: 0 1.5rem;
+}
+
+.Plan > a {
+    font-size: 1.4rem;
+    margin-left: 3.5rem;
+    font-weight: 700;
+}
+
+.Plan > a:active {
+    color: hsl(245, 67%, 62%);
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    margin: 0 2.5rem 1.5rem;
+    color: var(--VeryPaleBlue);
+    font-size: 1.6rem;
+    background-color: var(--BrightBlue);
+    box-shadow: 0 0 4.5rem -3rem rgba(0, 0, 0, 0.75);
+    border-style: none;
+    border-radius: 1rem;
+    min-height: 5rem;
+    font-weight: 700;
+}
+
+button:active {
+    background-color: hsl(245, 67%, 62%);
+}
+
+.Card > a {
+    color: var(--UnsaturatedBlue);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.Card > a:active {
+    color: var(--DarkBlue);
+}
+
+/* Card Section Media Query */
+@media (min-width: 1024px) {
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    .Card {
+        max-width: 45rem;
+        min-height: 70rem;
+    }
+
+    .Card > img {
+        min-height: 22rem;
+        margin-bottom: 5rem;
+    }
+
+    .Card > p {
+        padding: 0 7.5rem;
+    }
+
+    .Plan {
+        margin: 3rem 5rem 2.5rem;
+        min-height: 10rem;
+    }
+
+    .Plan > a {
+        margin-left: 10rem;
+    }
+
+    button {
+        margin: 0 5rem 4rem;
+    }
+}
+
+/* Footer */
+.attribution {
+    color: var(--DarkBlue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

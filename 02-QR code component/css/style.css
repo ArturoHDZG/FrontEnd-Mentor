@@ -1,0 +1,69 @@
+/* Colors & Fonts */
+:root {
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    /* Fonts */
+    --Font: 'Outfit', sans-serif;
+}
+
+/* Global Configuration */
+h1, p {
+    font-family: var(--Font);
+    text-align: center;
+}
+
+h1 {
+    color: var(--DarkBlue);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 28px;
+}
+
+p {
+    color: var(--GrayishBlue);
+    font-size: 15px;
+    margin: 0 15px;
+    line-height: 20px;
+}
+
+/* Container Section */
+.container {
+    background-color: var(--LightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Section */
+.card {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+/* Footer */
+.attribution {
+    color: var(--DarkBlue);
+    display: inline;
+    text-align: center;
+    font-size: 11px;
+}
+
+.attribution a {
+    display: inline;
+    color: hsl(228, 45%, 44%);
+}

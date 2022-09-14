@@ -1,0 +1,158 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --MainBackground: hsl(233, 47%, 7%);
+    --CardBackground: hsl(244, 38%, 16%);
+    --Accent: hsl(277, 64%, 61%);
+    /* Neutral */
+    --MainHeadingStats: hsl(0, 0%, 100%);
+    --MainParagraph: hsla(0, 0%, 100%, 0.75);
+    --StatHeadings: hsla(0, 0%, 100%, 0.6);
+    /* Fonts */
+    --Inter: 'Inter', sans-serif;
+    --Lexend: 'Lexend Deca', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    font-family: var(--Inter);
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--MainHeadingStats);
+    font-size: 2.8rem;
+}
+
+h2 {
+    color: var(--MainHeadingStats);
+    letter-spacing: 0.1rem;
+}
+
+p {
+    color: var(--MainParagraph);
+    font-family: var(--Lexend);
+}
+
+span {
+    color: var(--Accent);
+}
+
+/* Background */
+.Container {
+    background-color: var(--MainBackground);
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Section */
+.Card {
+    background-color: var(--CardBackground);
+    border-radius: 1rem;
+    overflow: hidden;
+    min-width: 32rem;
+    max-width: 48.5rem;
+    min-height: 78rem;
+    max-height: 80rem;
+    display: flex;
+    flex-direction: column;
+}
+
+picture {
+    position: relative;
+}
+
+img {
+    min-height: 24rem;
+    max-height: 30rem;
+    width: 100%;
+    display: block;
+}
+
+.Overlay {
+    background-color: var(--Accent);
+    filter: saturate(150%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.CardContent {
+    text-align: center;
+    padding: 3.5rem 2.5rem;
+}
+
+.CardContent_Text {
+    margin: 2rem 0;
+}
+
+.Stats {
+    color: var(--StatHeadings);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.Stats:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Card Section Media Query */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .Card {
+        min-width: 48.5rem;
+        max-width: 110rem;
+        min-height: 45rem;
+        max-height: 45rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    picture {
+        flex: 0 1 50%;
+    }
+
+    img {
+        min-height: 45rem;
+    }
+
+    .CardContent {
+        flex: 0 1 50%;
+        text-align: left;
+        padding: 8rem 7rem;
+    }
+
+    .Numbers {
+        text-align: center;
+        margin-top: 4.5rem;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .CardContent_Text {
+        padding-right: 1rem;
+    }
+}
+
+/* Footer */
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

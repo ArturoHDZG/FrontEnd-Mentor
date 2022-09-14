@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap">
+  <link rel="stylesheet" href="../css reset/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body class="Container">
+  <main class="Card">
+    <picture>
+      <source media="(max-width: 1024px)" srcset="images/image-header-mobile.jpg">
+      <source media="(min-width: 1024px)" srcset="images/image-header-desktop.jpg">
+      <img src="images/image-header-mobile.jpg" alt="Card Image">
+      <div class="Overlay"><img src="images/handtinyblack.gif" alt="null"></div>
+    </picture>
+    <div class="CardContent">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p class="CardContent_Text">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall
+      efficiency.</p>
+      <div class="Numbers">
+        <div>
+          <h2>10k+</h2>
+          <p class="Stats">companies</p>
+        </div>
+        <div>
+          <h2>314</h2>
+          <p class="Stats">templates</p>
+        </div>
+        <div>
+          <h2>12M+</h2>
+          <p class="Stats">queries</p>
+        </div>
+      </div> <!-- /.Numbers -->
+    </div> <!-- /.CardContent -->
+  </main>
+  <footer class="attribution">
+    Challenge by <a rel="noopener" href="http://https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a rel="noopener" href="https://arturohdzg.github.io/ArturoHDZG/" target="_blank">Arturo Hernández Garza</a>.
+  </footer>
+</body>
+</html>

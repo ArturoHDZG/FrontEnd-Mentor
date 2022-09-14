@@ -1,0 +1,194 @@
+/** Colors & Fonts */
+:root {
+    /* Colors*/
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --Fraunces: 'Fraunces', serif;
+    --Montserrat: 'Montserrat', sans-serif;
+
+    /* 10px = 1rem */
+    font-size: 10px;
+}
+
+/** Global Config */
+*, *:before, *:after { box-sizing: inherit; } /* Box Model */
+
+html { box-sizing: border-box; } /* Box Model */
+
+body {
+    background-color: var(--Cream);
+    margin: 8% 5%;
+}
+
+p {
+    color: var(--DarkGrayishBlue);
+    font-family: var(--Montserrat);
+    font-size: 1.4rem;
+}
+
+h1, h2 {
+    font-family: var(--Fraunces);
+    font-size: 3.2rem;
+}
+
+/** Card Section */
+main {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+/** Image Section */
+.Desk-Image {
+    display: none;
+    max-width: 35rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.Mob-Image {
+    display: block;
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/** Content Section */
+.Content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/** Text Section */
+.Text_Perfume {
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    color: var(--VeryDarkBlue);
+    margin: 1rem auto;
+}
+
+.Text_Description {
+    line-height: 2.5rem;
+    margin-right: 1rem;
+}
+
+/** Prices Section */
+.Prices {
+    display: flex;
+    gap: 1rem;
+}
+
+h2 {
+    color: var(--DarkCyan);
+    margin: 1rem 0;
+}
+
+.Prices_Regular {
+    align-self: center;
+    text-decoration: line-through;
+}
+
+/** button Section */
+button {
+    background-color: var(--DarkCyan);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+button:active { background-color: hsl(158, 36%, 22%); }
+
+.Button_Text {
+    color: var(--White);
+    margin: 1.5rem 0;
+}
+
+/** Footer */
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/** Media Queries */
+@media (min-width: 768px) {
+    /* Card Section */
+    body {
+        margin: 0;
+    }
+
+    main {
+        flex-direction: row;
+        height: 50rem;
+        width: 70rem;
+        overflow: hidden;
+    }
+
+    .Container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Image Section */
+    .Image { flex: 1 0 50% }
+
+    .Desk-Image { display: block; }
+
+    .Mob-Image { display: none; }
+
+    /* Content Section */
+    .Content {
+        padding: 3.5rem;
+        height: 50rem;
+        flex: 1 0 50%
+    }
+
+    /* Text Section */
+    .Text_Perfume {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .Text_Description {
+        line-height: 2.5rem;
+        font-size: 1.6rem;
+        margin-right: 2.4rem;
+    }
+
+    /* Prices Section */
+    h2 {
+        margin: 2rem 0;
+        font-size: 4rem;
+    }
+
+    .Prices_Regular { margin-left: 1.5rem; }
+
+    /* Button Section */
+    .Button_Text { font-weight: bold; }
+}
