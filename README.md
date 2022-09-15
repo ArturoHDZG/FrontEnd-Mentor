@@ -1,6 +1,6 @@
 # FrontEnd-Mentor
 
-Frontend Mentor Challenges
+## Repository for all Frontend Mentor Challenges
 
 1. [Product preview card component](https://arturohdzg.github.io/FrontEnd-Mentor/01-Product%20preview%20card%20component/index.html)
 2. [QR code component](https://arturohdzg.github.io/FrontEnd-Mentor/02-QR%20code%20component/index.html)
@@ -11,3 +11,4 @@ Frontend Mentor Challenges
 7. [3-column preview card component](https://arturohdzg.github.io/FrontEnd-Mentor/07-3-column%20preview%20card%20component/index.html)
 8. [Social proof section](https://arturohdzg.github.io/FrontEnd-Mentor/08-Social%20proof%20section/index.html)
 9. [Huddle landing page with a single introductory section](https://arturohdzg.github.io/FrontEnd-Mentor/09-Huddle%20landing%20page%20with%20a%20single%20introductory%20section/index.html)
+10. [Single price grid component](https://arturohdzg.github.io/FrontEnd-Mentor/10-Single%20price%20grid%20component/index.html)
