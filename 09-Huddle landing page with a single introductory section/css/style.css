@@ -1,0 +1,97 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    /* Fonts */
+    --Headings: 'Poppins', sans-serif;
+    --Body: 'Open Sans', sans-serif;
+}
+
+/* Background */
+body {
+    background-color: var(--Violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: whitesmoke;
+    font-family: var(--Body);
+    padding: 8%;
+}
+
+/* Background Media Query */
+@media (min-width: 56rem) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: auto 100%;
+    }
+}
+
+/* Header */
+.logoImg {
+    max-width: 35vw;
+}
+
+/* Content */
+.container {
+    /* min-height: 100vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroImg {
+    padding: 15% 0;
+}
+
+h1 {
+    font-family: var(--Headings);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+section > p {
+    font-size: 1.6rem;
+    padding: 5% 2.5%;
+}
+
+button {
+    font-family: var(--Headings);
+    font-weight: 400;
+    color: var(--Violet);
+    font-size: 1.3rem;
+    min-height: 4rem;
+    min-width: 60%;
+    border-radius: 2rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+button:active {
+    color: whitesmoke;
+    background-color: var(--SoftMagenta);
+}
+
+/* Footer */
+footer {
+    padding-top: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer > p {
+    display: block;
+}
+
+.icons:active {
+    filter: invert(68%) sepia(86%) saturate(1390%) hue-rotate(258deg) brightness(106%) contrast(82%);
+}
+
+.attribution {
+    font-size: 1.1rem;
+}
+
+.attribution a {
+    color: wheat;
+}
