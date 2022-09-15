@@ -63,7 +63,7 @@ h1 {
     font-weight: 600;
 }
 
-.right_content > p {
+.right_content p {
     font-size: 1.6rem;
     padding: 5% 2.5%;
 }
@@ -115,7 +115,7 @@ button:active {
         font-size: 3.5rem;
     }
 
-   .right_content > p {
+   .right_content p {
         padding: 5% 0;
     }
 
