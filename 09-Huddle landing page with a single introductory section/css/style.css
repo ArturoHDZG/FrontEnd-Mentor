@@ -24,6 +24,7 @@ body {
     body {
         background-image: url(../images/bg-desktop.svg);
         background-size: auto 100%;
+        padding: 0;
     }
 }
 
@@ -31,6 +32,18 @@ body {
 .logoImg {
     max-width: 35vw;
 }
+
+/* Header Media Query */
+@media (min-width: 56rem) {
+    header {
+        padding: 5% 10%;
+    }
+
+    .logoImg {
+        max-width: 14vw;
+    }
+}
+
 
 /* Content */
 .container {
@@ -65,11 +78,54 @@ button {
     border-radius: 2rem;
     border-style: none;
     cursor: pointer;
+    box-shadow: 1rem 1rem 4rem -1rem rgba(0, 0, 0, 0.75);
 }
 
 button:active {
     color: whitesmoke;
     background-color: var(--SoftMagenta);
+}
+
+/* Content Media Query */
+@media (min-width: 56rem) {
+    .container {
+        text-align: left;
+    }
+
+    .content {
+        display: flex;
+        padding: 0 8% 0 10%;
+        gap: 4%;
+    }
+
+    .left_content {
+        flex-basis: 60%;
+    }
+
+    .heroImg {
+        padding: 0;
+    }
+
+    .right_content {
+        flex-basis: 40%;
+        padding: 4% 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    section > p {
+        padding: 5% 0;
+    }
+
+    button {
+        font-size: 1.8rem;
+        border-radius: 4rem;
+        min-height: 6rem;
+        min-width: 40%;
+    }
+
 }
 
 /* Footer */
@@ -84,6 +140,10 @@ footer > p {
     display: block;
 }
 
+.icons {
+    padding: 0 3%;
+}
+
 .icons:active {
     filter: invert(68%) sepia(86%) saturate(1390%) hue-rotate(258deg) brightness(106%) contrast(82%);
 }
@@ -94,4 +154,21 @@ footer > p {
 
 .attribution a {
     color: wheat;
+}
+
+/* Footer Media Query */
+@media (min-width: 56rem) {
+    footer {
+        text-align: end;
+        padding-top: 5%;
+        padding-right: 10%;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1%;
+    }
+
+    .footer_icons {
+        text-align: left;
+        flex-basis: 16%;
+    }
 }
