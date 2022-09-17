@@ -1,0 +1,113 @@
+/* Colors & Fonts */
+:root {
+    /* Primary */
+    --Cyan: hsl(180, 62%, 55%);
+    --Red: hsl(0, 78%, 62%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /* Neutral */
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    /* Fonts */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--VeryLightGray);
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1, h2 {
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+}
+
+p {
+    color: var(--GrayishBlue);
+    font-weight: 200;
+}
+
+span {
+    display: block;
+    font-weight: 200;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card1, .card2, .card3, .card4 {
+    background-color: white;
+    border-radius: 1rem;
+    border-top: 1rem solid;
+    box-shadow: 0rem 0.5rem 1.5rem 0.3rem rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+/* Header */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    max-width: 85%;
+}
+
+.headerText {
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+/* Main Content */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    max-width: 85%;
+    margin: 2rem 0 0 0;
+}
+
+img {
+    margin-top: 2rem;
+}
+
+.card1 {
+    border-top: 0.5rem solid var(--Cyan);
+}
+
+.card2 {
+    border-top: 0.5rem solid var(--Red);
+}
+
+.card3 {
+    border-top: 0.5rem solid var(--Orange);
+}
+
+.card4 {
+    border-top: 0.5rem solid var(--Blue);
+}
+
+/* Footer */
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
