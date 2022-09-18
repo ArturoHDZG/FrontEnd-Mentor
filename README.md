@@ -12,4 +12,4 @@
 8. [Social proof section](https://arturohdzg.github.io/FrontEnd-Mentor/08-Social%20proof%20section/index.html)
 9. [Huddle landing page with a single introductory section](https://arturohdzg.github.io/FrontEnd-Mentor/09-Huddle%20landing%20page%20with%20a%20single%20introductory%20section/index.html)
 10. [Single price grid component](https://arturohdzg.github.io/FrontEnd-Mentor/10-Single%20price%20grid%20component/index.html)
-11. [Four card feature section](https://github.com/ArturoHDZG/FrontEnd-Mentor/blob/main/11-Four%20card%20feature%20section/index.html)
+11. [Four card feature section](https://arturohdzg.github.io/FrontEnd-Mentor/11-Four%20card%20feature%20section/index.html)
