@@ -17,6 +17,14 @@
 body {
     background-color: var(--VeryLightGray);
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 111rem;
 }
 
 h1 {

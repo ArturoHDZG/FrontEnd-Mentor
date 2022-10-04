@@ -1,0 +1,91 @@
+/* Colors & Fonts */
+:root {
+  /* Primary */
+  --moderateViolet: hsl(263, 55%, 52%);
+  --darkGrayishBlue: hsl(217, 19%, 35%);
+  --darkBlue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --lightGray: hsl(0, 0%, 81%);
+  --lightBlue: hsl(210, 46%, 95%);
+
+  /* Fonts */
+  --font: 'Barlow Semi Condensed', sans-serif;
+  font-size: 10px;
+}
+
+/* Global Styles */
+body {
+  background: var(--lightBlue);
+  font-family: var(--font);
+  font-size: 1.3rem;
+}
+
+.container {
+  max-width: 111rem;
+}
+
+h1 {
+  margin-right: 1.3rem;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.font_1 {
+  font-size: 1.1rem;
+}
+
+/* Cards */
+.card_1 {
+  background-color: var(--moderateViolet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+  color: var(--White);
+}
+
+.me_1 {
+  margin-right: 1.8rem;
+}
+
+.card_2 {
+  background: var(--darkGrayishBlue);
+  color: var(--White);
+}
+
+.card_3 {
+  background: var(--White);
+  color: var(--darkBlue);
+}
+
+.card_4 {
+  background: var(--darkBlue);
+  color: var(--White);
+}
+
+.me_2 {
+  margin-right: 0.4rem;
+}
+
+.card_5 {
+  background: var(--White);
+  color: var(--darkBlue);
+}
+
+.me_3 {
+  margin-right: 0.4rem;
+}
+
+/* Footer */
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
